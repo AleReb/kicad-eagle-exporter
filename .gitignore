@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+_deps/
+.venv/
+build/
+dist/
+test-output/
+*.kicad_prl
+*.lck
+*.zip
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v2",
+  "name": "KiCad Eagle Exporter",
+  "description": "Export KiCad 10 boards and single-sheet projects to Eagle XML for Bantam Tools and experimental Fusion import.",
+  "description_full": "KiCad 10 SWIG action plugin and standalone Python tools. Exports boards or linked board/schematic/library projects. Interface and reports are in Spanish. Windows conversion tested; Linux and macOS need native validation. Fusion editing is experimental.",
+  "identifier": "com.github.alereb.kicad-eagle-exporter",
+  "type": "plugin",
+  "author": {"name": "Alejandro Rebolledo", "contact": {"web": "https://github.com/AleReb"}},
+  "license": "GPL-3.0-only",
+  "resources": {},
+  "versions": [{"version": "0.3.0", "status": "development", "kicad_version": "10.0", "kicad_version_max": "10.0", "runtime": "swig"}]
+}
