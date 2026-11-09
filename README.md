@@ -2,7 +2,11 @@
 
 Exporta placas y proyectos de **KiCad 10.0.x a Eagle XML** para usar un flujo de fresado con **Bantam Tools**, revisar diseños legacy y experimentar con la importación electrónica en **Autodesk Fusion**.
 
-Incluye un **plugin para el editor de PCB**, un conversor por línea de comandos y un instalador para **Windows, Linux y macOS**. El objetivo es mantener una sola base de código: cada sistema instala las dependencias adecuadas para el Python de su KiCad.
+Incluye un **plugin para el editor de PCB**, un conversor por línea de comandos y un instalador para **Windows, Linux y macOS**. El motor nativo utiliza el Python de KiCad.
+
+También incluye una **[versión web en JavaScript para GitHub Pages](web/README.md)**, independiente del runtime de KiCad. Carga PCB, esquemáticos o ZIP en el navegador y descarga EAGLE XML 7.7 (`.brd`, `.sch`, `.lbr`) y un informe. No sube los diseños a un servidor. Consulta su documentación para conocer los límites de la versión web y activar Pages con el workflow incluido.
+
+Prueba local de la web: `node scripts/serve-web.mjs`. Paquete web independiente: `node scripts/build-web.mjs`.
 
 **Estado: versión de desarrollo 0.3.0.** La conversión se probó en Windows con KiCad 10.0.7. Dos placas fueron importadas correctamente en Bantam Tools 1.2.3 durante el desarrollo. La edición de pistas y la sincronización completa en Eagle/Fusion siguen siendo experimentales. Linux y macOS necesitan pruebas nativas; disponer de instrucciones y pruebas de código multiplataforma no equivale a haber validado el plugin dentro de KiCad en esos sistemas.
 

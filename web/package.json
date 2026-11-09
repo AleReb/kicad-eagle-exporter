@@ -1,0 +1,6 @@
+{
+  "name": "kicad-eagle-web",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node ../scripts/serve-web.mjs", "test": "node --test tests/*.test.mjs", "build": "node ../scripts/build-web.mjs" }
+}
